@@ -1,8 +1,8 @@
 {
 	"version":"0.1-alpha", // this much match the version in index.js
 	"moduleList":[ // modules are listed in an array
-		"github.com/wgytcraft/errors.git", // error handler
-		"github.com/wgytwebsites/test.git"
+		"wgytcraft/errors", // error handler
+		"wgytwebsites/test"
 	],
 	"errorHandler":"wgytcraft/errors",
 	"webpages":{
