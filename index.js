@@ -2,27 +2,27 @@ const express = require('express');
 const ejs = require('ejs');
 const app = express();
 app.set("view engine", "ejs");
-app.set("views", __dirname + "/views");
 app.set("view options", { layout: true } );
 const version = "0.1-alpha"
-function error(host,res,req,errornumber,errordesc,version){
+function error(host,res,req,errornumber,errordesc,version,ejs){
 	res.status(errornumber);
 	date = Date.now() * 1000
 	date2 = new Date(date)
-	date3 = date2.toLocaleString("en-US", {timeZoneName: "short"})
+	date3 = date2.toLocaleString("en-US", {timeZoneName: "short",timeZone: "America/New_York"})
 	console.log(`${errornumber} ${errordesc} error @ https://${host}${req.url}`)
-	res.render(`all/error`,{errornumber: errornumber,errordesc:errordesc,url:`https://${host}${req.url}`,host:host||wgytdomains,timestamp:date3,version:version});
+	ejs.renderFile('modules/errors/index.ejs', {errornumber: errornumber,errordesc:errordesc,url:`https://${host}${req.url}`,host:host||wgytdomains,timestamp:date3,version:version}, {}, function (err, template) { if (err) { throw err; } else { res.end(template); } }); 
 }
-function servePage(host,res,req,error,sites){
+function servesite(host,res,req,error,sites){
 	if (sites.includes(host)===true){
-		res.send('this is WIP')
+		res.send('this is WIP') // comment this out
+		// servepage(host,res,req)
 	}else{
-		error(host,res,req,501,'Not Implemented. This Site Doesn\'t exist.',version)
+		error(host,res,req,501,'Not Implemented. This Site Doesn\'t exist.',version,ejs)
 	}
 }
 app.get('*', (req, res) => {
 	host = req.get('host')
-	servePage(host,res,req,error,process.env.sites)
+	servesite(host,res,req,error,process.env.sites)
 });
 app.listen(3000, () => {
   console.log('server started');
