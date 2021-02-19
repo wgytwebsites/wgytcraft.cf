@@ -1,12 +1,13 @@
 {
   "name": "all-in-one",
   "version": "1.0.0",
-  "description": "",
+  "description": "The easiest way to host websites ## modules ### check out [the documentation](https://documentation.wgyt.tk/wgytcraft.cf/#modules) for sample modules - to add more modules add to the modules.json file",
   "main": "index.js",
   "dependencies": {
     "ejs": "^3.1.6",
     "express": "^4.17.1",
-    "nodegit": "^0.27.0"
+    "fs-extra": "^9.1.0",
+    "git-clone-sync": "^0.1.2"
   },
   "devDependencies": {},
   "scripts": {
@@ -14,5 +15,13 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wgytwebsites/wgytcraft.cf.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wgytwebsites/wgytcraft.cf/issues"
+  },
+  "homepage": "https://github.com/wgytwebsites/wgytcraft.cf#readme"
 }
