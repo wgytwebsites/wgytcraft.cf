@@ -1,11 +1,9 @@
 {
-	"version":"0.1-alpha", // this much match the version in index.js
-	"moduleList":[ // modules are listed in an array
-		"wgytcraft/errors", // error handler
-		"wgytwebsites/test"
+	"version":"0.1-alpha",
+	"moduleList":[ 
+		"wgytcraft/errors" 
 	],
 	"errorHandler":"wgytcraft/errors",
 	"webpages":{
-		"test.wgyt.tk":"wgytwebsites/test"
 	}
 }
