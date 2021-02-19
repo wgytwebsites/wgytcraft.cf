@@ -1,9 +1,12 @@
 {
 	"version":"0.1-alpha",
 	"moduleList":[ 
-		"wgytcraft/errors" 
+		"wgytcraft/errors",
+		"wgytcraft/hello-world-template"
 	],
 	"errorHandler":"wgytcraft/errors",
-	"webpages":{
+	"website":["test.wgyt.tk"],
+	"websiteData":{
+		"test.wgyt.tk":"wgytcraft/hello-world-template"
 	}
 }
