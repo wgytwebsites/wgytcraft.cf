@@ -10,9 +10,20 @@ const version = "0.1-alpha"
 for (var i = 0; i < 2; i++) {
 	// import modules from github
 	for (module of modules.moduleList) {
-		url = `git://github.com/${module}.git`
+	  if (module.startsWith("gh://")) {
+	    url=module.replace("gh://", "git://github.com/")
+	    url=`${url}.git`
+	  }else if(module.startsWith("gl://")) {
+	    url=module.replace("gl://", "git://gitlab.com/")
+	    url=`${url}.git`
+		}else if(module.startsWith("bb://")){
+		  f=module.split("/")
+			url=`https://${f[2]}@bitbucket.org/${module.replace("bb://", "")}`
+		}else if(module.startsWith("local://")){
+			url=""
+		}
 		directory = `${__dirname}/modules/${module}`
-		clone(url, directory, { shallow: true }, function() { })
+		clone(url, directory.replace("gh://","").replace("bb://", "").replace("gl://",""), { shallow: true }, function() { })
 	};
 }
 // set up error handler
