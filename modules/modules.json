@@ -6,7 +6,7 @@
 	],
 	"errorHandler":"wgytcraft/errors",
 	"website":["test.wgyt.tk"],
-	"websiteData":{
+	"websiteModules":{
 		"test.wgyt.tk":"wgytcraft/hello-world-template"
 	}
 }

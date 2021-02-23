@@ -20,7 +20,7 @@ const error = require(`${__dirname}/modules/${modules.errorHandler}/index.js`)
 // serve website
 function servesite(host, res, req, error, modules) {
 	if (modules.website.includes(host) === true) {
-		module = modules.websiteData[host]
+		module = modules.websiteModules[host]
 		Sitemodule = require(`${__dirname}/modules/${module}/index.js`)
 		Sitemodule(host, res, req, error, version, ejs)
 	} else {
