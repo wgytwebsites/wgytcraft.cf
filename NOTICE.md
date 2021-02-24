@@ -15,7 +15,6 @@ Most of the dependencies are licenced under the MIT license. The main code in th
 ### All Dependencies
 ```
 Wgytcraft-hosting@1.0.0 /home/runner/all-in-one
-+-- bijou.js@6.3.3
 +-- ejs@3.1.6
 | `-- jake@10.8.2
 |   +-- async@0.9.2
