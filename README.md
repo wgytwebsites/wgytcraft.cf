@@ -19,6 +19,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tr>
     <td align="center"><a href="http://wgyt.tk"><img src="https://avatars.githubusercontent.com/u/68466727?v=4?s=100" width="100px;" alt=""/><br /><sub><b>William (Wgyt) Horning</b></sub></a><br /><a href="https://github.com/wgytcraft/wgytcraft-hosting/issues?q=author%3Awgyt" title="Bug reports">🐛</a> <a href="https://github.com/wgytcraft/wgytcraft-hosting/commits?author=wgyt" title="Code">💻</a> <a href="https://github.com/wgytcraft/wgytcraft-hosting/commits?author=wgyt" title="Documentation">📖</a> <a href="#design-wgyt" title="Design">🎨</a> <a href="#example-wgyt" title="Examples">💡</a> <a href="#ideas-wgyt" title="Ideas, Planning, & Feedback">🤔</a> <a href="#infra-wgyt" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="#maintenance-wgyt" title="Maintenance">🚧</a> <a href="https://github.com/wgytcraft/wgytcraft-hosting/pulls?q=is%3Apr+reviewed-by%3Awgyt" title="Reviewed Pull Requests">👀</a></td>
+    <td align="center"><a href="https://retronbv.github.io"><img src="https://avatars.githubusercontent.com/u/49005044?v=4?s=100" width="100px;" alt=""/><br /><sub><b>retronbv</b></sub></a><br /><a href="https://github.com/wgytcraft/wgytcraft-hosting/commits?author=retronbv" title="Code">💻</a> <a href="#ideas-retronbv" title="Ideas, Planning, & Feedback">🤔</a></td>
   </tr>
 </table>
 
