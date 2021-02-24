@@ -4,6 +4,7 @@ const fs = require('fs-extra');
 const app = express();
 var clone = require('git-clone-sync');
 const modules = JSON.parse(fs.readFileSync('modules/modules.json'))
+console.log('starting wgytcraft website server')
 app.set("view engine", "ejs");
 app.set("view options", { layout: true });
 const version = "0.1-alpha"
@@ -43,5 +44,5 @@ app.get('*', (req, res) => {
 	servesite(host, res, req, error, modules, version, ejs)
 });
 app.listen(3000, () => {
-	console.log('server started');
+	console.log('website server started');
 });
