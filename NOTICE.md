@@ -1,4 +1,4 @@
-# Legal
+# Notice
 wgytcraft-hosting
 ## Wgytcraft name, logo, and more.
 The Wgytcraft Name, Logo, and other branding is owned by William Horning, but he has decided to allow use of the branding for any purpouse whatsoever as long as a link to this Github repo is provided.
