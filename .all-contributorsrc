@@ -1,0 +1,32 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "wgyt",
+      "name": "William (Wgyt) Horning",
+      "avatar_url": "https://avatars.githubusercontent.com/u/68466727?v=4",
+      "profile": "http://wgyt.tk",
+      "contributions": [
+        "bug",
+        "code",
+        "doc",
+        "design",
+        "example",
+        "ideas",
+        "infra",
+        "maintenance",
+        "review"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "wgytcraft-hosting",
+  "projectOwner": "wgytcraft",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
