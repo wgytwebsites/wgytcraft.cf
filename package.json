@@ -1,7 +1,7 @@
 {
-  "name": "all-in-one",
+  "name": "Wgytcraft-hosting",
   "version": "1.0.0",
-  "description": "The easiest way to host websites ## modules ### check out [the documentation](https://documentation.wgyt.tk/wgytcraft.cf/#modules) for sample modules - to add more modules add to the modules.json file",
+  "description": "The easiest way to host websites",
   "main": "index.js",
   "dependencies": {
     "bijou.js": "^6.3.3",
@@ -16,7 +16,7 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/wgytwebsites/wgytcraft.cf.git"
