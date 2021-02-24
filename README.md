@@ -6,8 +6,8 @@ The easiest way to host websites
 ### check out [the documentation](https://documentation.wgyt.tk/wgytcraft.cf/#modules) for sample modules
 - to add more modules add to the modules.json file
 
-## License
-[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fwgytcraft%2Fwgytcraft-hosting.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fwgytcraft%2Fwgytcraft-hosting?ref=badge_large)
+## Legal
+Please see [NOTICE.md](https://github.com/wgytcraft/wgytcraft-hosting/blob/master/NOTICE.md) and [LICENSE](https://github.com/wgytcraft/wgytcraft-hosting/blob/master/LICENSE)
 
 ## Contributors ✨
 
