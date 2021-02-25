@@ -3,6 +3,7 @@ language:
 before_install:
     - npm install -g codecov
     - npm install -g istanbul
+    - npm install -g filters
 script:
     - nyc npm test
     - nyc report --reporter=lcov
