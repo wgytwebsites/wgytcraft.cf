@@ -4,5 +4,6 @@ before_install:
     - npm install -g codecov
     - npm install -g istanbul
 script:
-    - istanbul cover ./node_modules/mocha/bin/_mocha --reporter lconvonly -- -R spec
+    - nyc npm test
+    - nyc report --reporter=lcov
     - codecov
