@@ -1,12 +1,9 @@
-const express = require('express');
+const http = require('http')
 const ejs = require('ejs');
 const fs = require('fs-extra');
-const app = express();
 var clone = require('git-clone-sync');
 const modules = JSON.parse(fs.readFileSync('modules/modules.json'))
 console.log('starting wgytcraft website server')
-app.set("view engine", "ejs");
-app.set("view options", { layout: true });
 const version = "0.1-alpha"
 for (var i = 0; i < 2; i++) {
 	// import modules from github
@@ -39,10 +36,7 @@ function servesite(host, res, req, error, modules) {
 		error(host, res, req, 501, 'Not Implemented. This Site Doesn\'t exist.', version, ejs)
 	}
 }
-app.get('*', (req, res) => {
-	host = req.get('host')
-	servesite(host, res, req, error, modules, version, ejs)
-});
-app.listen(3000, () => {
-	console.log('website server started');
-});
+http.createServer((req, res) => {
+	host = req.headers.host
+  servesite(host, res, req, error, modules, version, ejs)
+}).listen(3000);

@@ -4,6 +4,7 @@
   "description": "The easiest way to host websites",
   "main": "index.js",
   "dependencies": {
+    "bijou.js": "^6.3.3",
     "ejs": "^3.1.6",
     "express": "^4.17.1",
     "fs-extra": "^9.1.0",
