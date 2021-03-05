@@ -3,10 +3,15 @@
 
 The easiest way to host websites
 
-## modules
-### check out [the documentation](https://documentation.wgyt.tk/wgytcraft.cf/#modules) for sample modules
-- to add more modules add to the modules.json file
-
+## how to use
+### require the module
+```javascript
+var wgytcraft = require('@wgytcraft/hosting');
+```
+### api:
+#### wgytcraft.main(modulesjson,dirname)
+modulesjson should be the modules.json file from wgytcraft
+dirname should be __dirname
 ## Legal
 Please see [NOTICE.md](https://github.com/wgytcraft/wgytcraft-hosting/blob/master/NOTICE.md) and [LICENSE](https://github.com/wgytcraft/wgytcraft-hosting/blob/master/LICENSE)
 
