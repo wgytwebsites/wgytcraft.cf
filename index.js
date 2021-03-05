@@ -1,8 +1,9 @@
+/* dirname */
+/* modules */
 const http = require('http')
 const ejs = require('ejs');
 const fs = require('fs-extra');
 var clone = require('git-clone-sync');
-const modules = JSON.parse(fs.readFileSync('modules/modules.json'))
 console.log('starting wgytcraft website server')
 const version = "0.1-alpha"
 for (var i = 0; i < 2; i++) {
@@ -20,17 +21,17 @@ for (var i = 0; i < 2; i++) {
 		}else if(module.startsWith("local://")){
 			url=""
 		}
-		directory = `${__dirname}/modules/${module}`
+		directory = `${dirname}/modules/${module}`
 		clone(url, directory.replace("gh://","").replace("bb://", "").replace("gl://",""), { shallow: true }, function() { })
 	};
 }
 // set up error handler
-const error = require(`${__dirname}/modules/${modules.errorHandler}/index.js`)
+const error = require(`${dirname}/modules/${modules.errorHandler}/index.js`)
 // serve website
 function servesite(host, res, req, error, modules) {
 	if (modules.website.includes(host) === true) {
 		module = modules.websiteData[host]
-		Sitemodule = require(`${__dirname}/modules/${module}/index.js`)
+		Sitemodule = require(`${dirname}/modules/${module}/index.js`)
 		Sitemodule(host, res, req, error, version, ejs)
 	} else {
 		error(host, res, req, 501, 'Not Implemented. This Site Doesn\'t exist.', version, ejs)
