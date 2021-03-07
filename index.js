@@ -1,7 +1,5 @@
-// modules and dirname should be set here in regular version, but not in npm version
-dirname = __dirname;
+exports.main = function (modules,dirname) {
 const fs = require("fs-extra");
-const modules = JSON.parse(fs.readFileSync("modules/modules.json"));
 const http = require("http");
 const ejs = require("ejs");
 var clone = require("git-clone-sync");
@@ -76,3 +74,4 @@ http.createServer((req, res) => {
     console.log(host)
     servesite(host, res, req, error, modules, version, ejs);
 }).listen(3000);
+}
