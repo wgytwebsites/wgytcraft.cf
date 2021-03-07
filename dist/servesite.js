@@ -1,17 +1,9 @@
-exports.main = function(host, res, req, error, modules, version, eta) {
-  if (modules.website.includes(host) === true) {
+exports.main = function(host, res, req, error, modules, version, ejs) {
+  if (modules.website.includes(host) === true) { // if the site is in modulesjson 
     module = modules.websiteData[host];
     Sitemodule = require(`${dirname}/modules/${module}/index.js`);
-    Sitemodule(host, res, req, error, version, eta);
-  } else {
-    error(
-      host,
-      res,
-      req,
-      501,
-      "Not Implemented. This Site Doesn't exist.",
-      version,
-      eta
-    );
+    Sitemodule(host, res, req, error, version, ejs); // serve the site
+  } else { // otherwise throw error
+    error(host,res,req,501,"site doesn't exist :(",version,ejs);
   }
 }
