@@ -10,9 +10,9 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "node test.js"
+    "test": "node tests/test.js"
   },
-  "keywords": [],
+  "keywords": ["hosting","wgytcraft"],
   "author": "wgyt",
   "license": "MIT",
   "repository": {
