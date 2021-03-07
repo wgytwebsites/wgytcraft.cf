@@ -3,7 +3,7 @@ exports.main = function (modules,dirname) {
 	const servesite = require("./servesite.js").main
 	const fs = require("fs-extra");
 	const http = require("http");
-	const ejs = require("ejs");
+	const eta = require("eta");
 	var clone = require("git-clone-sync");
 	console.log("starting wgytcraft website server");
 	const version = "1.0.2";
@@ -11,6 +11,6 @@ exports.main = function (modules,dirname) {
 	const error = require(`${dirname}/modules/${modules.errorHandler}/index.js`);
 	http.createServer((req, res) => {
 			host = req.headers.host;
-			servesite(host, res, req, error, modules, version, ejs);
+			servesite(host, res, req, error, modules, version, eta);
 	}).listen(3000);
 }
