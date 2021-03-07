@@ -11,18 +11,9 @@ wgytcraft(modulesjson,dirname)
 ```
 modulesjson should be the modules.json file for wgytcraft
 dirname should be __dirname
-## Folder Structure:
-### Tests
-This is the folder for Tests
-### Dist
-This is the actual source Code
-### .github
-Lot of health files
 ## Legal
 Please see [NOTICE.md](https://github.com/wgytcraft/wgytcraft-hosting/blob/master/NOTICE.md) and [LICENSE](https://github.com/wgytcraft/wgytcraft-hosting/blob/master/LICENSE)
-
 ## Contributors ✨
-
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
@@ -36,10 +27,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://grahamsh.com"><img src="https://avatars.githubusercontent.com/u/64214252?v=4?s=100" width="100px;" alt=""/><br /><sub><b>GrahamSH</b></sub></a><br /><a href="https://github.com/wgytcraft/wgytcraft-hosting/commits?author=GrahamSH-LLK" title="Code">💻</a></td>
   </tr>
 </table>
-
 <!-- markdownlint-restore -->
 <!-- prettier-ignore-end -->
-
 <!-- ALL-CONTRIBUTORS-LIST:END -->
-
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome.
