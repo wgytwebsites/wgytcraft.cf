@@ -1,4 +1,4 @@
-exports.main = function(modules, dirname,clone) {
+exports.main = function(modules,dirname,clone) {
 	for (module of modules.moduleList) { // for each module
 		let toClone = true // clone by default
 		if (module.startsWith("gh://")) { // github stuff
@@ -8,11 +8,11 @@ exports.main = function(modules, dirname,clone) {
 			url = module.replace("gl://", "git://gitlab.com/");
 			url = `${url}.git`;
 		} else if (module.startsWith("bb://")) { // bitbucket stuff
-			f = module.split("/");
+			const f = module.split("/");
 			url = `https://${f[2]}@bitbucket.org/${module.replace("bb://", "")}`;
 		} else if (module.startsWith("local://")) { // local modules
 			let toClone = false // don't clone
-			url = "";
+			const url = "";
 		} else if (module.startsWith("npm://")) { // npm modules
 			let toClone = false // don't clone
 			fs.rmdirSync(
@@ -22,9 +22,9 @@ exports.main = function(modules, dirname,clone) {
 				`${dirname}/node_modules/${module.replace("npm://", "")}`,
 				`${dirname}/modules/${module.replace("@", "").replace("npm://", "")}`
 			);
-			url = "";
+			const url = "";
 		}
-		directory = `${dirname}/modules/${module}`;
+		const directory = `${dirname}/modules/${module}`;
 		if (toClone) { // clone it
 			clone(
 				url,
