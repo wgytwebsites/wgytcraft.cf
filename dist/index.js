@@ -7,7 +7,7 @@ exports.main = function (modules,dirname,port) {
 	var clone = require("git-clone-sync"); // clone from git sources
 	const version = "1.0.3"; // verison number
 	importmodules(modules,dirname,clone); // import the modules
-	const error = require(`${dirname}/modules/${modules.errorHandler}/index.js`); // get the error handler
+	const error = require(`${dirname}/modules/${modules.errorHandler.module}/index.js`); // get the error handler
 	http.createServer((req, res) => { // set up the server
 			host = req.headers.host; // this is the host
 			res.setHeader("X-Powered-By","nodejs@wgytcraft/hosting")
