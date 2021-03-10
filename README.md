@@ -17,7 +17,7 @@ wgytcraft(modulesJson, dirname)
 📦 wgytcraft/hosting
  ┣ 📂 tests # Folder for tests
  ┣ 📂 dist # Actual source code
- ┣ 📂 .github # Actual source code
+ ┣ 📂 .github # Community health files
  ┣ 📜 LICENSE 
  ┣ 📜 NOTICE.md
  ┗ 📜 README.md 
