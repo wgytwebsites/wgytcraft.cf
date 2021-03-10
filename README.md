@@ -1,25 +1,27 @@
 # Wgytcraft-hosting - _The easiest way to host websites_
 ![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fwgytcraft%2Fwgytcraft-hosting.svg?type=shield) ![Issues](https://img.shields.io/github/issues/wgytcraft/wgytcraft-hosting?color=green&logo=github&logoColor=white) ![Closed Issues](https://img.shields.io/github/issues-closed/wgytcraft/wgytcraft-hosting?color=red&logo=github&logoColor=white) ![Last Commit](https://img.shields.io/github/last-commit/wgytcraft/wgytcraft-hosting?color=green&logo=github&logoColor=white) ![Commits Since Last Release](https://img.shields.io/github/commits-since/wgytcraft/wgytcraft-hosting/latest?color=green&include_prereleases&label=commits%20since%20last%20release&logo=github&logoColor=white&sort=semver) ![Release](https://img.shields.io/github/v/release/wgytcraft/wgytcraft-hosting?color=green&logo=github&logoColor=white) ![Downloads](https://img.shields.io/github/downloads/wgytcraft/wgytcraft-hosting/latest/total?color=green&logo=github&logoColor=white&sort=semver) ![Repo Size](https://img.shields.io/github/repo-size/wgytcraft/wgytcraft-hosting?color=green&logo=github&logoColor=white) ![Forks](https://img.shields.io/github/forks/wgytcraft/wgytcraft-hosting?color=green&logo=github-actions&logoColor=white) ![Stars](https://img.shields.io/github/stars/wgytcraft/wgytcraft-hosting?color=green&logo=github&logoColor=white) ![Languages](https://img.shields.io/github/languages/count/wgytcraft/wgytcraft-hosting?color=green&logo=github&logoColor=white) ![Top Language](https://img.shields.io/github/languages/top/wgytcraft/wgytcraft-hosting?color=green&logoColor=white) ![Vulnerabilities](https://img.shields.io/snyk/vulnerabilities/github/wgytcraft/wgytcraft-hosting?color=green&logo=synk&logoColor=white) ![Licence](https://img.shields.io/github/license/wgytcraft/wgytcraft-hosting?color=green&logo=repl.it&logoColor=white) ![All Contributors](https://img.shields.io/github/all-contributors/wgytcraft/wgytcraft-hosting/master?color=green&logo=github&logoColor=white)
-## how to use
-### require the module
+## How to use
+### Require the module
 ```javascript
 var wgytcraft = require('@wgytcraft/hosting').main
 ```
-### use it: 
-```javascript 
-wgytcraft(modulesjson,dirname)
+### Use it: 
+```javascript
+wgytcraft(modulesJson, dirname)
+// modulesJson should be the modules.json file for wgytcraft
+// dirname should be __dirname
+
 ```
-modulesjson should be the modules.json file for wgytcraft
-dirname should be __dirname
 ## Folder Structure:
-### Tests
-This is the folder for Tests
-### Dist
-This is the actual source Code
-### .github
-Lot of health files
-## Legal
-Please see [NOTICE.md](https://github.com/wgytcraft/wgytcraft-hosting/blob/master/NOTICE.md) and [LICENSE](https://github.com/wgytcraft/wgytcraft-hosting/blob/master/LICENSE)
+```
+📦 wgytcraft/hosting
+ ┣ 📂 tests # Folder for tests
+ ┣ 📂 dist # Actual source code
+ ┣ 📂 .github # Actual source code
+ ┣ 📜 LICENSE 
+ ┣ 📜 NOTICE.md
+ ┗ 📜 README.md 
+```
 
 ## Contributors ✨
 
