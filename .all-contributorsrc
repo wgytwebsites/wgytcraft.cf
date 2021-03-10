@@ -47,12 +47,13 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/64214252?v=4",
       "profile": "https://grahamsh.com",
       "contributions": [
-        "code"
+        "code",
+        "doc"
       ]
     }
   ],
   "contributorsPerLine": 7,
-  "projectName": "wgytcraft-hosting",
+  "projectName": "hosting",
   "projectOwner": "wgytcraft",
   "repoType": "github",
   "repoHost": "https://github.com",
